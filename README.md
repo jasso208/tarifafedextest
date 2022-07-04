@@ -21,7 +21,7 @@ pip install xmltodict
 
 ## Instalar
 
-pip install tarifafedextest==0.4
+pip install tarifafedextest==0.5
 
 
 
