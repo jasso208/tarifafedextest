@@ -1,7 +1,7 @@
 import json
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
-from apiservice import ApiService
+from tarifafedextest.apiservice import ApiService
 import requests
 import xmltodict
 
