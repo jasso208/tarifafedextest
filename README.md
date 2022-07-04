@@ -1,27 +1,27 @@
 #Tarifa Fedex Test
 
-Prueba: funcion que consulta Web Service de Fedex para cotizar tarifas.
+   Prueba: funcion que consulta Web Service de Fedex para cotizar tarifas.
 
 
 
 ##Pre-Requisitos.
 
-Python 3.5 o superior
+   Python 3.5 o superior
 
 
 
 ##Instalar dependencias
 
-pip install requests
+   pip install requests
 
-pip install xmltodict
+   pip install xmltodict
 
 
 
 
 ##Instalar
 
-pip install tarifafedextest
+   pip install tarifafedextest==0.3
 
 
 
@@ -29,21 +29,21 @@ pip install tarifafedextest
 
 ###Importamos la clase CotizarTarifa
 
-from cotizatarifa import CotizaTarifa
+   from cotizatarifa import CotizaTarifa
 
-import json
+   import json
 
 
 
 ###Creamos el nuevo objeto de la clase CotizarTarifa
 
-ct = CotizaTarifa()
+   ct = CotizaTarifa()
 
 
 
 ###Creamos objeto json con las credenciales del cliente
 
-credentials = json.dumps(
+   credentials = json.dumps(
 
     {
 
@@ -61,13 +61,13 @@ credentials = json.dumps(
 
     }
 
-)
+   )
 
 
 
 ###Creamos objeto json con la informacion de paquete a enviar
 
-quote_params = json.dumps({
+   quote_params = json.dumps({
 
     "address_from": {
 
@@ -101,19 +101,19 @@ quote_params = json.dumps({
 
     }    
 
-})
+   })
 
 
 
 ###Ejecutamos la funcion get, para obtener la cotizacion
 
-ct.get(credentials,quote_params)
+   ct.get(credentials,quote_params)
 
 
 
 ###Ejemplo de respuesta
 
-[
+   [
 
    {
 
@@ -163,4 +163,4 @@ ct.get(credentials,quote_params)
 
    }
 
-]
+   ]

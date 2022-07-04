@@ -5,7 +5,7 @@ readme = open("./README.md","r")
 setup(
     name="tarifafedextest",
     packages=['tarifafedextest'],
-    version="0.2",
+    version="0.3",
     description="Test de tarifa fedex. Prueba para Manuable",
     long_description=readme.read(),
     long_description_content_type="text/markdown",
