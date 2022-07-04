@@ -31,7 +31,7 @@ Description-Content-Type: text/markdown
 
 ##Instalar
 
-   pip install tarifafedextest
+   pip install tarifafedextest==0.3
 
 
 
